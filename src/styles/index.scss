@@ -1,0 +1,19 @@
+@import "~reset-css";
+@import "./_fonts.scss";
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    min-width: 360px;
+}
+
+body,
+html,
+#root,
+.wrapper {
+    background: #fff;
+    color: #000000;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+}

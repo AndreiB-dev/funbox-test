@@ -1,0 +1,42 @@
+@import "../../styles/_variables.scss";
+
+.label {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $blue;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Trebuchet MS";
+
+    p {
+        color: #fff !important;
+    }
+
+    &__num {
+        font-size: 42px;
+        line-height: 22px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__unit {
+        font-size: 21px;
+        line-height: 22px;
+    }
+
+    &--selected {
+        @extend .label;
+        background: $red;
+    }
+
+    &--disabled {
+        @extend .label;
+        background: $disabled;
+    }
+}

@@ -1,0 +1,12 @@
+@import "../../styles/_variables.scss";
+
+.line {
+    display: flex;
+    flex-direction: row;
+    color: $gray;
+    line-height: 16px;
+
+    &__number {
+        font-weight: 700;
+    }
+}
