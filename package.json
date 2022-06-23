@@ -1,5 +1,6 @@
 {
   "name": "funbox-test",
+  "author": "Bychkov Andrei <a.bychkov.dev@gmail.com> (https://github.com/AndreiB-dev/)",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
