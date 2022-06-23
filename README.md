@@ -1,4 +1,4 @@
-<b>Delivery</b> 
+<b>Funbox test task</b> 
 
 <b><h3>Get started:</h3><hr></hr></b>
 <code>
