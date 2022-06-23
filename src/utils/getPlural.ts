@@ -2,7 +2,7 @@ export const getPlural = (num: number): string => {
     if (num % 10 === 1 && num !== 11) {
         return "мышь";
     }
-    if (num % 10 > 1 && num % 10 < 5 && ![12, 13, 14].includes(num)) {
+    if (num % 10 > 1 && num % 10 < 5 && ![12, 13, 14].includes(num % 100)) {
         return "мыши";
     }
     return "мышей";
