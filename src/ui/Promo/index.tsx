@@ -1,9 +1,9 @@
-import React from "react";
+import React, { memo } from "react";
 import { getPlural } from "../../utils/getPlural";
 
 import "./promo.scss";
 
-export const Promo = ({
+export const Promo = memo(({
     packsToBuy,
     gift,
     isClientSatisfied,
@@ -25,4 +25,4 @@ export const Promo = ({
             {isClientSatisfied && <p>заказчик доволен</p>}
         </div>
     );
-};
+});

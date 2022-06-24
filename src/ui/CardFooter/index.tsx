@@ -1,10 +1,10 @@
-import React from "react";
+import React, { memo } from "react";
 import { Status } from "../../types/types";
 import { getFooterText } from "../../utils/getFooterText";
 
 import "./cardFooter.scss";
 
-export const CardFooter = ({
+export const CardFooter = memo(({
     status,
     onClick,
     description,
@@ -15,6 +15,8 @@ export const CardFooter = ({
     description: string;
     taste: string;
 }) => {
+    console.log("3");
+    
     return (
         <div className="footer">
             <p
@@ -34,4 +36,4 @@ export const CardFooter = ({
             )}
         </div>
     );
-};
+});

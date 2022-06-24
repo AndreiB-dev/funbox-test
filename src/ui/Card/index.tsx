@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import Background from "../../assets/illustration/card.png";
 import { Product, Status } from "../../types/types";
 import { getStyle } from "../../utils/getStatusStyle";
@@ -21,12 +20,18 @@ export const Card = ({ item }: { item: Product }) => {
         if (status === "selected") setStatus("active");
     };
 
+    const hoverHandler = () => {
+        if (status === "selected") {
+            setHovered(prev => !prev)
+        }
+    };
+    
     return (
         <div className="container">
             <div
                 className={getStyle("card", status)}
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
+                onMouseEnter={hoverHandler}
+                onMouseLeave={hoverHandler}
                 onClick={onClickHandler}
             >
                 <div
