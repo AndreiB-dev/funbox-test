@@ -20,9 +20,9 @@ export const Card = ({ item }: { item: Product }) => {
         if (status === "selected") setStatus("active");
     };
 
-    const hoverHandler = () => {
+    const hoverHandler = (bool: boolean) => {
         if (status === "selected") {
-            setHovered(prev => !prev)
+            setHovered(bool)
         }
     };
     
@@ -30,8 +30,8 @@ export const Card = ({ item }: { item: Product }) => {
         <div className="container">
             <div
                 className={getStyle("card", status)}
-                onMouseEnter={hoverHandler}
-                onMouseLeave={hoverHandler}
+                onMouseEnter={() => hoverHandler(true)}
+                onMouseLeave={() => hoverHandler(false)}
                 onClick={onClickHandler}
             >
                 <div
